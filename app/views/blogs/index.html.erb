@@ -1,2 +1,14 @@
-<h1>Blogs#index</h1>
-<p>Find me in app/views/blogs/index.html.erb</p>
+<h1>みんなの腹ペコつぶやき一覧</h1>
+<table>
+  <tr>
+    <th>内容</th>
+  </tr>
+  
+  <% @blogs.each do |blog| %>
+    <tr>
+      <td><%= blog.content %></td>
+    </tr>
+  <% end %>
+</table>
+<br>
+<%= link_to '新しく腹ペコをつぶやいてみる', new_blog_path %>
