@@ -1,8 +1,3 @@
-<%= form_with(model:@blog, local:true) do |form| %>
-  <div class="blog_content">
-    <%= form.label :tweet %>
-    <%= form.text_field :content %>
-  </div>
-  
-  <%= form.submit %>
-<% end %>
+<h2 style="color:blue;">新しくつぶやいてみる</h2>
+
+<%= render 'form' %>
